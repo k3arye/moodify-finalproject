@@ -92,6 +92,25 @@ p {
   gap: 15px;
 }
 
+.features {
+  background-color: #ffe4ec;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.features p {
+  margin: 8px 0;
+  color: #5a5a5a;
+}
+.section-title {
+  font-family: "Cherry Bomb One", system-ui;
+  color: #e75480;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
 .quote {
   margin: 40px 20px;
   padding: 20px;
