@@ -21,10 +21,10 @@ body {
   transform: translate(-50%, -50%);
   font-family: "Cherry Bomb One", system-ui;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 60px;
   color: crimson;
   margin: 0;
-  line-height: 1.6;
+  line-height: 3;
   letter-spacing: 3px;
 }
 
@@ -71,11 +71,11 @@ h2 {
 
 p {
   text-align: center;
-  font-family: "DynaPuff", system-ui;
+  font-family: "Cherry Bomb One", system-ui;
   font-size: 30px;
-  color: #444;
+  color: rgb(221, 45, 80);
   letter-spacing: 1px;
-  line-height: 3;
+  line-height: 1.6;
 }
 
 .track-btn {
@@ -99,6 +99,10 @@ p {
   background-color: #ff5f8f;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(255, 95, 143, 0.4);
+}
+
+.track-btn:active{
+    background-color: rgb(180, 14, 47);
 }
 
 footer {
