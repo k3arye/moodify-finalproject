@@ -1,6 +1,9 @@
 body {
   margin: 0;
   background-color: antiquewhite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -96,4 +99,17 @@ p {
   background-color: #ff5f8f;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(255, 95, 143, 0.4);
+}
+
+footer {
+  margin-top: auto;
+  padding: 4px 0;
+  background-color: #444;
+  line-height: 1.6;
+}
+
+#footer {
+    font-size: 14px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: antiquewhite;
 }
