@@ -62,7 +62,7 @@ body {
 
 .nav-links a:hover {
   background-color: #f2f2f2;
-  color: #b76e79;
+  color: #a53344;
 }
 
 h2 {
@@ -262,7 +262,7 @@ footer {
   color: #2f2f2f;
   transition: 0.2s;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .date-section input:hover {
@@ -309,22 +309,23 @@ button:focus {
   outline: none;
   box-shadow: 0 0 0 3px #e75480;
 }
- 
+
 /* ABOUT PAGE */
 .about-container {
   max-width: 900px;
   margin: 100px auto;
   padding: 0 20px;
+  margin-top: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .about-section {
-  background: #b76e79;
-  padding: 20px;
+  background: #bd7a84;
+  padding: 10px;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 .about-section:first-child {
   grid-column: span 2;
@@ -335,7 +336,8 @@ button:focus {
   color: white;
 }
 
-.about-section p, .about-section li {
+.about-section p,
+.about-section li {
   color: #2f2f2f;
   margin-top: 0;
 }
@@ -343,7 +345,7 @@ button:focus {
 .about-section ul {
   list-style: none;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .about-section li {
