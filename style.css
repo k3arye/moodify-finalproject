@@ -1,7 +1,7 @@
 /* HOME PAGE */
 body {
   margin: 0;
-  background-color: antiquewhite;
+  background-color: #fff8f9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -322,10 +322,10 @@ button:focus {
 }
 
 .about-section {
-  background: #bd7a84;
-  padding: 10px;
+  background: #ffe4ec;
+  padding: 15px;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); */
 }
 .about-section:first-child {
   grid-column: span 2;
@@ -333,7 +333,7 @@ button:focus {
 
 .about-section h2 {
   margin-bottom: 1px;
-  color: white;
+  color: #a53344;
 }
 
 .about-section p,
@@ -356,6 +356,7 @@ button:focus {
 
 .about-section li::before {
   content: "✔";
+  color: #22884e;
   font-size: 25px;
   top: 2px;
 }
