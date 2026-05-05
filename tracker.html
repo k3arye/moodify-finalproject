@@ -5,93 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moodify</title>
     <link rel="stylesheet" href="./style.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body class="track-page">
     <main>
       <header class="header">
-        <!-- <a href="./index.html" class="brand-link"> -->
+        <a href="./index.html" class="brand-link">
           <h1 class="brand">Moodify</h1>
         </a>
         <!-- nav bar -->
         <nav class="navbar">
-            <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./history.html">History</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./history.html">History</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
         </nav>
       </header>
 
- <div class="container">
-  <h1>Select your mood</h1>
-  <form id="mood-form">
+      <div class="container">
+        <h4>Select your mood</h4>
+        <form id="mood-form">
+          <!-- Mood Selection -->
+          <section class="mood-section">
+            <div class="mood-grid">
+              <label>
+                <input type="radio" name="mood" value="Happy" />
+                <span>😊 Happy</span>
+              </label>
 
-    <!-- Mood Selection -->
-    <section class="mood-section">
-      <div class="mood-grid">
-        <label>
-          <input type="radio" name="mood" value="Happy">
-          <span>😊 Happy</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Sad" />
+                <span>😔 Sad</span>
+              </label>
 
-        <label>
-          <input type="radio" name="mood" value="Sad">
-          <span>😔 Sad</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Anxious" />
+                <span>😰 Anxious</span>
+              </label>
 
-        <label>
-          <input type="radio" name="mood" value="Anxious">
-          <span>😰 Anxious</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Stressed" />
+                <span>😤 Stressed</span>
+              </label>
 
-        <label>
-          <input type="radio" name="mood" value="Stressed">
-          <span>😤 Stressed</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Tired" />
+                <span>😴 Tired</span>
+              </label>
 
-        <label>
-          <input type="radio" name="mood" value="Tired">
-          <span>😴 Tired</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Angry" />
+                <span>😡 Angry</span>
+              </label>
 
-        <label>
-          <input type="radio" name="mood" value="Angry">
-          <span>😡 Angry</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Calm" />
+                <span>😌 Calm</span>
+              </label>
 
-        <label>
-          <input type="radio" name="mood" value="Calm">
-          <span>😌 Calm</span>
-        </label>
+              <label>
+                <input type="radio" name="mood" value="Overwhelmed"/>
+                <span>😵‍💫 Overwhelmed</span>
+              </label>
+
+            </div>
+          </section>
+
+          <!-- Date -->
+          <section class="date-section">
+            <label for="date">Select Date</label>
+            <input type="date" id="date" required />
+          </section>
+
+          <!-- Button -->
+          <button type="submit">Track Mood</button>
+        </form>
+
+        <!-- Feedback -->
+        <section class="message-section">
+          <div id="message"></div>
+        </section>
       </div>
-    </section>
-
-    <!-- Date -->
-    <section class="date-section">
-      <label for="date">Select Date</label>
-      <input type="date" id="date" required>
-    </section>
-
-    <!-- Button -->
-    <button type="submit">Track Mood</button>
-
-  </form>
-
-  <!-- Feedback -->
-  <section class="message-section">
-    <div id="message"></div>
-  </section>
-
-</div>
-
-  </main>
+    </main>
 
     <footer>
       <p id="footer">©2026 Moodify</p>
     </footer>
-
   </body>
 </html>
