@@ -309,3 +309,51 @@ button:focus {
   outline: none;
   box-shadow: 0 0 0 3px #e75480;
 }
+ 
+/* ABOUT PAGE */
+.about-container {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-section {
+  background: #b76e79;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+.about-section:first-child {
+  grid-column: span 2;
+}
+
+.about-section h2 {
+  margin-bottom: 1px;
+  color: white;
+}
+
+.about-section p, .about-section li {
+  color: #2f2f2f;
+  margin-top: 0;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.about-section li {
+  padding: 10px 14px;
+  font-family: "Cherry Bomb One", system-ui;
+  font-size: 25px;
+}
+
+.about-section li::before {
+  content: "✔";
+  font-size: 25px;
+  top: 2px;
+}
