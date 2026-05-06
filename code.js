@@ -20,7 +20,10 @@ if (saveBtn) {
     // 3. get date (or fallback)
     let dateInput = document.getElementById("date").value;
     let date = dateInput || new Date().toLocaleDateString();
-
+    let time = new Date().toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
     // 4. get existing moods
     let moods = JSON.parse(localStorage.getItem("moods")) || [];
 
@@ -29,6 +32,7 @@ if (saveBtn) {
       mood: mood,
       note: note,
       date: date,
+      time: time
     };
 
     moods.push(entry);
@@ -114,7 +118,7 @@ if (historyList) {
         (entry.note || "") +
         "</p>" +
         "<small>" +
-        entry.date +
+        entry.date +  " - "  + entry.time + 
         "</small>";
 
       historyList.appendChild(card);
@@ -122,9 +126,7 @@ if (historyList) {
   }
 }
 
-// =======================
 // CLEAR HISTORY BUTTON
-// =======================
 
 let clearBtn = document.getElementById("clearBtn");
 

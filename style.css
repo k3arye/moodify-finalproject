@@ -398,6 +398,7 @@ button:focus {
   transition: all 0.5s ease;
 }
 
+
 /* HISTORY PAGE */
 .history-page .container {
   max-width: 600px;
@@ -409,7 +410,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 20px;
+  margin: 30px;
 }
 
 #history-list div {
@@ -444,8 +445,8 @@ button:focus {
   padding: 10px 14px;
   border: none;
   border-radius: 10px;
-  background: #fee2e2;
-  color: crimson;
+  background: #b46270;
+  color: #ffffff;
   cursor: pointer;
   transition: 0.2s;
   display: block;
@@ -453,5 +454,5 @@ button:focus {
 }
 
 #clearBtn:hover {
-  background: #fecaca;
+  background: #a35d68;
 }
