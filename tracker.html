@@ -14,25 +14,24 @@
   </head>
 
   <body class="track-page">
-    <main>
-      <header class="header">
-        <a href="./index.html" class="brand-link">
-          <h1 class="brand">Moodify</h1>
-        </a>
-        <!-- nav bar -->
-        <nav class="navbar">
-          <ul class="nav-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./history.html">History</a></li>
-            <li><a href="./about.html">About</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header class="header">
+      <a href="./index.html" class="brand-link">
+        <h1 class="brand">Moodify</h1>
+      </a>
+      <!-- nav bar -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./history.html">History</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
       <div class="container">
         <h4>Select your mood</h4>
         <form id="mood-form">
-            
           <!-- Mood Selection -->
           <section class="mood-section">
             <div class="mood-grid">
@@ -72,11 +71,14 @@
               </label>
 
               <label>
-                <input type="radio" name="mood" value="Overwhelmed"/>
+                <input type="radio" name="mood" value="Overwhelmed" />
                 <span>😵‍💫 Overwhelmed</span>
               </label>
-
             </div>
+          </section>
+
+          <section>
+            <textarea id="note" placeholder="Why are you feeling this way?(optional)"></textarea>
           </section>
 
           <!-- Date -->
@@ -86,18 +88,17 @@
           </section>
 
           <!-- Button -->
-          <button type="submit">Track Mood</button>
+          <button type="button" id="saveBtn">Track Mood</button>
+          <p id="message"></p>
         </form>
 
-        <!-- Feedback -->
-        <section class="message-section">
-          <div id="message"></div>
-        </section>
       </div>
     </main>
 
     <footer>
       <p id="footer">©2026 Moodify</p>
     </footer>
+
+    <script src="./code.js" defer></script>
   </body>
 </html>
