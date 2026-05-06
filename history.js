@@ -24,3 +24,16 @@ if (!moods || moods.length === 0) {
     historyList.appendChild(card);
   }
 }
+
+let clearBtn = document.getElementById("clearBtn");
+
+clearBtn.onclick = function () {
+  let confirmClear = confirm("Are you sure you want to clear all mood history?");
+
+  if (confirmClear) {
+    localStorage.removeItem("moods");
+
+    document.getElementById("history-list").innerHTML =
+      "<p>No moods recorded yet.</p>";
+  }
+};
