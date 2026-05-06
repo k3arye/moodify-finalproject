@@ -43,7 +43,7 @@ document.getElementById("saveBtn").onclick = function () {
   let message = "";
 
   switch (mood) {
-    case "Happy":
+    case "Happy😊":
       message = "Make sure to spread your joy!✨";
       break;
 
