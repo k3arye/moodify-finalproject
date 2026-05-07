@@ -40,8 +40,9 @@ CSS
 JAVASCRIPT
 
 ## Support and contact details
-Feel free to contact me via email:
- estakeare@gmail.com
+For questions, feedback or contributions, feel free to reach out:
+* Email: estakearye@gmail.com
+* Github: github.com/k3arye 
 
 ### License
 MIT License
