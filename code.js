@@ -74,7 +74,8 @@ if (saveBtn) {
         break;
 
       case "Overwhelmed":
-        message = "Not everything needs your attention right now. You can come back to things later 🙂‍↕️";
+        message =
+          "Not everything needs your attention right now. You can come back to things later 🙂‍↕️";
         break;
 
       default:
