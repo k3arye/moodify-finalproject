@@ -1,5 +1,4 @@
 // TRACKER PAGE LOGIC
-
 let saveBtn = document.getElementById("saveBtn");
 
 if (saveBtn) {
@@ -32,7 +31,7 @@ if (saveBtn) {
       mood: mood,
       note: note,
       date: date,
-      time: time
+      time: time,
     };
 
     moods.push(entry);
@@ -75,7 +74,7 @@ if (saveBtn) {
         break;
 
       case "Overwhelmed":
-        message = "Do what you can, not everything.🤍";
+        message = "Not everything needs your attention right now. You can come back to things later 🙂‍↕️";
         break;
 
       default:
@@ -88,7 +87,7 @@ if (saveBtn) {
       msgBox.innerText = message;
     }
 
-    // 9. reset form
+    // 9. clear button
     selected.checked = false;
     document.getElementById("note").value = "";
     document.getElementById("date").value = "";
@@ -96,7 +95,6 @@ if (saveBtn) {
 }
 
 // HISTORY PAGE LOGIC
-
 let historyList = document.getElementById("history-list");
 
 if (historyList) {
@@ -118,7 +116,9 @@ if (historyList) {
         (entry.note || "") +
         "</p>" +
         "<small>" +
-        entry.date +  " - "  + entry.time + 
+        entry.date +
+        " - " +
+        entry.time +
         "</small>";
 
       historyList.appendChild(card);
@@ -127,7 +127,6 @@ if (historyList) {
 }
 
 // CLEAR HISTORY BUTTON
-
 let clearBtn = document.getElementById("clearBtn");
 
 if (clearBtn) {

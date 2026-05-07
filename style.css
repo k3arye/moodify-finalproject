@@ -244,10 +244,13 @@ footer {
   transition: all 0.2s ease;
 }
 
-#note:focus {
+#note:hover {
   background: #8e4f59;
-  border-color: #c7d2fe;
-  box-shadow: 0 0 0 3px rgba(199, 210, 254, 0.4);
+  cursor: pointer;
+}
+
+#note:active {
+  background-color: #a53344;
 }
 
 .date-section {
@@ -412,8 +415,9 @@ button:focus {
 
 #history-list h3 {
   margin: 0;
-  font-size: 20px;
-  color: #2f2f2f;
+  font-size: 25px;
+  color: #3a3a3a;
+  letter-spacing: 1px;
   font-family: "Cherry Bomb One", system-ui;
 }
 
@@ -433,8 +437,8 @@ button:focus {
   padding: 10px 14px;
   border: none;
   border-radius: 10px;
-  background: #b46270;
-  color: #ffffff;
+  background: #5e343b;
+  color: white;
   cursor: pointer;
   transition: 0.2s;
   display: block;
