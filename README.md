@@ -5,6 +5,9 @@
 
 ## Description
 Moodify allows users to track their emotions, write short notes on what caused them to feel as they do, and review their mood history. It was designed to feel emotionally comforting, using soft colours, playful fonts and rounded cards to create a welcoming experience.
+
+### Demo
+Here is a live working demo
 https://k3arye.github.io/moodify-finalproject/
 
 ## Setup/Installation Requirements
