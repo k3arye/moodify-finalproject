@@ -448,3 +448,29 @@ button:focus {
 #clearBtn:hover {
   background: #a35d68;
 }
+
+@media (max-width: 768px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand {
+    position: static;
+    transform: none;
+    font-size: 40px;
+  }
+
+  .navbar {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
