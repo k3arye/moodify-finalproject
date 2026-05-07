@@ -25,6 +25,10 @@ body {
   letter-spacing: 5px;
 }
 
+.brand-link{
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -448,7 +452,8 @@ button:focus {
 #clearBtn:hover {
   background: #a35d68;
 }
-
+ 
+/* MEDIA QUERY */
 @media (max-width: 768px) {
 
   .header {
@@ -462,7 +467,6 @@ button:focus {
     position: static;
     transform: none;
     font-size: 40px;
-    text-decoration: none;
   }
 
   .navbar {
