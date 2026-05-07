@@ -462,6 +462,7 @@ button:focus {
     position: static;
     transform: none;
     font-size: 40px;
+    text-decoration: none;
   }
 
   .navbar {
